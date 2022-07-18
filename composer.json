@@ -1,0 +1,35 @@
+{
+  "name": "yrv/logger",
+  "type": "library",
+  "version": "0.1",
+  "description": "Simple logger for YRV projects",
+  "keywords": ["logger", "yrv", "psr-3"],
+  "require-dev": {
+    "phpunit/phpunit": "9.5.x-dev"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "YRV\\Logger\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Roman Yankovenko",
+      "email": "roman@yankovenko.ru"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=7.4.0"
+  },
+  "scripts": {
+    "test": "phpunit ./tests"
+  }
+}
+
